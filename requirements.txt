@@ -1,0 +1,25 @@
+# The order of packages is significant, because pip processes them in the order
+# of appearance. Changing the order has an impact on the overall integration
+# process, which may cause wedges in the gate later.
+# Order matters to the pip dependency resolver, so sorting this file
+# changes how packages are installed.  New dependencies should be
+# added in alphabetical order, however, some dependencies may need to
+# be installed in a specific order.
+#
+# PBR should always appear first
+pbr>=1.6 # Apache-2.0
+python-neutronclient>=5.1.0 # Apache-2.0
+fmclient>=1.0
+cgcs-patch>=1.0
+distributedcloud-client>=1.0.0
+cgtsclient>=1.0
+sysinv>=1.0
+nfv-client>=1.0.0
+sm-client>=1.0.0
+python-cephclient>=13.2.2.0
+pytz>=2013.6 # MIT
+requests-toolbelt>=0.5
+six>=1.9.0 # MIT
+XStatic-Angular>=1.3.7 # MIT License
+XStatic-D3>=3.1.6.2 # BSD License (3 clause)
+XStatic-jQuery>=1.7.2 # MIT License

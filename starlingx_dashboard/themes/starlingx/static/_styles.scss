@@ -1,0 +1,34 @@
+@import "/themes/starlingx/variables";
+@import "/themes/default/styles";
+
+
+// WRS components
+@import "components/badges";
+@import "components/charts";
+@import "components/tables";
+
+
+.messages {
+    width: 500px;
+    margin-left: -250px;
+    left: 50%;
+    right: auto;
+}
+
+.password-icon {
+    top: 0px;
+    color: gray;
+}
+
+#main_content {
+    height: 100%;
+    width: 100%;
+    display: table;
+
+    #content_body {
+      width: 100%;
+      display: table-cell;
+      padding-left: 0px;
+      vertical-align: top;
+    }
+}

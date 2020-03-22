@@ -24,6 +24,19 @@ try:
 except ImportError:
     pass
 
+#setuptools.setup(
+#    setup_requires=['pbr>=1.8'],
+#    pbr=True)
+
 setuptools.setup(
-    setup_requires=['pbr>=1.8'],
-    pbr=True)
+    name="starlingx_dashboard",
+    version="1.0"
+    author="yuchengde",
+    author_email="yu.chengde@99cloud.net",
+    url="https://github.com/ChantYuCN/starlingx-dashboard.git",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+    ],
+    python_requires='>=3.6',
+)

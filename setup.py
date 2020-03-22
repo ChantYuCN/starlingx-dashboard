@@ -25,7 +25,7 @@ except ImportError:
     pass
 
 setuptools.setup(
-    version="1.0"
+    version="1.0",
     setup_requires=['pbr>=1.8'],
     pbr=True)
 

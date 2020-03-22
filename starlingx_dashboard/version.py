@@ -14,4 +14,6 @@ from pbr import version
 
 
 version_info = version.VersionInfo('starlingx_dashboard')
-__version__ = version_info.cached_version_string()
+#__version__ = version_info.cached_version_string()
+#chant
+__version__ = "1.0"

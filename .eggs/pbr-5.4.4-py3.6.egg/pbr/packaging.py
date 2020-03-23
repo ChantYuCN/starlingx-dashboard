@@ -857,9 +857,9 @@ def get_version(package_name, pre_version=None):
         return version
     version = _get_version_from_pkg_metadata(package_name)
     #chant 
-    #if version:
-    #    return version
-    #version = _get_version_from_git(pre_version)
+    if version:
+        return version
+    version = _get_version_from_git(pre_version)
     # Handle http://bugs.python.org/issue11638
     # version will either be an empty unicode string or a valid
     # unicode version string, but either way it's unicode and needs to
@@ -869,7 +869,7 @@ def get_version(package_name, pre_version=None):
     if version:
         return version
     #chant
-    return 1.0
+    #return 1.0
     raise Exception("Versioning for this project requires either an sdist"
                     " tarball, or access to an upstream git repository."
                     " It's also possible that there is a mismatch between"
